@@ -41,4 +41,5 @@ jobs:
           push: "true"
           username: ${{ github.actor }}
           password: ${{ secrets.TOKEN }}
-          images: ghcr.io/homeenterpriseinc/fluentd:${{ github.GITHUB_REF_NAME }}
+          images: ghcr.io/homeenterpriseinc/fluentd
+          tag: ${{ github.GITHUB_REF_NAME }}

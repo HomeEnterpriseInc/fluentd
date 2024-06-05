@@ -42,4 +42,4 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ secrets.TOKEN }}
           images: ghcr.io/homeenterpriseinc/fluentd
-          tag: ${{ github.GITHUB_REF_NAME }}
+          tags: ${{ github.GITHUB_REF_NAME }}

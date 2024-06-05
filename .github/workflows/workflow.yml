@@ -37,9 +37,5 @@ jobs:
         uses: docker/build-push-action@v5.3.0
         with:
           context: .
-          file: ./Dockerfile
           push: "true"
-          username: ${{ github.actor }}
-          password: ${{ secrets.TOKEN }}
-          images: ghcr.io/homeenterpriseinc/fluentd
-          tags: ${{ github.GITHUB_REF_NAME }}
+          tags: ghcr.io/homeenterpriseinc/fluentd:${{ github.GITHUB_REF_NAME }}
